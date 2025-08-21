@@ -32,15 +32,15 @@ public class Main {
         double total = PriceCalculator.total(subtotal, size);
 
         System.out.println("\n===== ORDER SUMMARY =====");
-        System.out.println("  Bread: " + bread + " - " + PriceTable.BRL.format(baseBread));
-        System.out.println("  Cheeses: " + String.join(", ", cheeses) + " - " + PriceTable.BRL.format(cheeseSum));
-        System.out.println("  Meats: " + String.join(", ", meats) + " - " + PriceTable.BRL.format(meatSum));
-        System.out.println("  Salads: " + String.join(", ", salads) + " - " + PriceTable.BRL.format(saladSum));
-        System.out.println("  Sauces: " + String.join(", ", sauces) + " - " + PriceTable.BRL.format(sauceSum));        
-        System.out.println("  Subtotal: " + PriceTable.BRL.format(subtotal));
+        System.out.println("  Bread: " + bread + " - " + PriceTable.USD.format(baseBread));
+        System.out.println("  Cheeses: " + String.join(", ", cheeses) + " - " + PriceTable.USD.format(cheeseSum));
+        System.out.println("  Meats: " + String.join(", ", meats) + " - " + PriceTable.USD.format(meatSum));
+        System.out.println("  Salads: " + String.join(", ", salads) + " - " + PriceTable.USD.format(saladSum));
+        System.out.println("  Sauces: " + String.join(", ", sauces) + " - " + PriceTable.USD.format(sauceSum));        
+        System.out.println("  Subtotal: " + PriceTable.USD.format(subtotal));
         System.out.println("x Size multiplier (" + size + "): " + PriceTable.PRICE_SIZE.get(size));
         System.out.println("--------------------------------");
-        System.out.println("TOTAL: " + PriceTable.BRL.format(total) + "\n");
+        System.out.println("TOTAL: " + PriceTable.USD.format(total) + "\n");
 
         sc.close();
     } 
