@@ -34,7 +34,7 @@ public class PriceTable {
             "Cucumber", 0.42,
             "Olive", 0.30);
 
-    public static final Map<String, Double> PRICE_SOUCE = Map.of(
+    public static final Map<String, Double> PRICE_SAUCE = Map.of(
             "Spiced Mayonnaise", 0.40,
             "Honey Mustard", 0.20,
             "Parmesan", 0.55,

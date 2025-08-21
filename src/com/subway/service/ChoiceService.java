@@ -28,7 +28,7 @@ public class ChoiceService {
         return Prompter.chooseSeveral(sc, "Choose your salads (optional):", Catalog.SALADS);
     }
 
-    public List<String> chooseSouces(Scanner sc){
+    public List<String> chooseSauces(Scanner sc){
         return Prompter.chooseSeveral(sc, "Choose your sauces (optional):", Catalog.SAUCES);
 
     }
